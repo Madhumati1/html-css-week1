@@ -1,0 +1,71 @@
+
+
+/* Main Colours:
+
+Primary colour - rgb(183, 154, 246); //purple for navigation links
+Secondary colour - rgb(53, 38, 80); //darker purple
+Third colour - rgb(200, 177, 250); //lighter purple */
+
+
+/*---------------------*/
+/* mobile defalut style ----*/
+/*apply a natural box model layout to all  element*/
+
+*{
+    box-sizing: :border-box;
+
+
+}
+
+/*---------*/
+/* -----main style---*/
+
+/* all images and video will be set to 100% of their parent container */
+
+img, video{
+
+    width:100%;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+
+    margin: :0;
+    padding: :0;
+}
+
+/*---------global style--*/
+
+a{
+    text-decoration: none;
+}
+
+
+
+/*---------------  home page style ------*/
+
+.homeBgImage{
+
+    background-image: url(../img/trainerHomePage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logoC{
+
+    width: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

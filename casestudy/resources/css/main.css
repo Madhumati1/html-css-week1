@@ -1,0 +1,351 @@
+
+
+/* Main Colours:
+
+Primary colour - rgb(183, 154, 246); //purple for navigation links
+Secondary colour - rgb(53, 38, 80); //darker purple
+Third colour - rgb(200, 177, 250); //lighter purple */
+
+
+/*---------------------*/
+/* mobile defalut style ----*/
+/*apply a natural box model layout to all  element*/
+
+*{
+    box-sizing: :border-box;
+
+
+}
+
+/*---------*/
+/* -----main style---*/
+
+/* all images and video will be set to 100% of their parent container */
+
+img, video{
+
+    width:100%;
+}
+
+body {
+    font-family:'Mukta',sans-serif;
+    font-size: 16px;
+
+    margin: :0;
+    padding: :0;
+    color: #313131;
+
+}
+
+
+
+
+
+@font-face {
+    font-family: '28_days_laterregular';
+    src: url('../../vendors/fonts/28_days_later-webfont.eot');
+    src: url('../vendors/fonts/28_days_later-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../vendors/fonts/28_days_later-webfont.woff2') format('woff2'),
+         url('../vendors/fonts/28_days_later-webfont.woff') format('woff'),
+         url('../vendors/fonts/28_days_later-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*---------global style--*/
+
+a{
+    text-decoration: none;
+}
+
+
+
+/*---------------  home page style ------*/
+
+.homeBgImage{
+    position: relative;
+
+    background-image: url(../img/trainerHomePage.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-attachment: fixed;
+    background-size: cover;
+/*    width: 100%;*/
+    height: 100vh;
+}
+
+.logoC{
+    position: absolute;
+
+    width: 30px;
+    top:3px;
+    left:7px;
+
+}
+.cartIcon{
+    position: absolute;
+
+    left: 45vw;
+    top: 10px;
+    /*width: 100px;*/
+}
+.fa-shopping-basket{
+    /* 1em is the default (10px) we use em to make sure it is scalable */
+    font-size: 2em;
+
+    color:#ffffff;
+}
+
+/* this is for the 3 bar menu button */
+
+.navBtn{
+
+    font-size:2em;
+    cursor: pointer;
+    color:#ffffff;
+    margin: 0 0 0 85vw;
+    padding: 7px 3% 0 30%
+    background-color: rgb(0, 0, 0, 0.5);
+}
+.navC{
+
+    background-color: rgb(53,38,80);
+    border-bottom: 3px solid rgb(153,38,80);
+}
+nav li a{
+    color: white;
+    display: block;
+    text-align: right;
+}
+.menuList{
+   /* removes the bullet point from the ul*/
+    list-style-type: :none;
+    padding: 0;
+    display: none;
+}
+.menuList a{
+    padding: 10px;
+}
+#headerC{
+    position: fixed;
+    width: 100%;
+}
+.mainHeading{
+    font-family: 'Lovers Quarrel', cursive;
+    color: #ffffff;
+    letter-spacing: 3px;
+    font-size: 2em;
+    text-align: center;
+    font-weight: lighter;
+
+    /* review this */
+    margin: 35vh auto 0 auto;
+}
+
+
+.slogan{
+    padding: 50vh 4vh 0 60vw;
+    font-family: '28_days_laterregular';
+    color: #ffffff;
+    font-size: 2em;
+    text-align: right;
+    font-weight: lighter;
+}
+
+.newButton{
+    /* set a border */
+    border: 1px solid #ffffff;
+    /* change  radious for rounded corners*/
+    border-radius: 5px;
+    background-color:rgb(200, 177, 250,0.3);
+    padding: 15px 20px;
+    color: #ffffff;
+    margin: 0 0 0 35vw;
+    font-size: 1.2em;
+
+}
+
+/*------------Product page------------------*/
+
+h1{
+    font-size: 1.7em;
+    text-align: center;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+p{
+    text-align: center;
+    padding: 0 10px;
+}
+/*------styling for the the button  in ------------------------------------*/
+
+.addtocart{
+    border: 1px solid rgb(200, 177, 250);
+    border-radius: 5px;
+    background-color:   rgb(53, 38, 80);
+    padding: 15px 20px;
+    margin: 2vh auto 15vh auto;
+
+}
+
+/* color changed here because text wrapped in an a tag*/
+.addtocart a{
+    color: #ffffff;
+}
+.addtocart a:after{
+
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f07a";
+}
+
+article{
+    text-align: center;
+}
+
+
+
+
+
+/*---------------------- Meadia Queries-----------*/
+
+
+/*----------- Mobile @ 568px and above ---- ------------*/
+
+@media screen and (min-width: 568px)
+{
+    /* we are including what we are chanhing */
+
+   .slogan{
+       padding: 2px;
+
+
+    }
+
+
+
+.mainHeading{
+
+    margin: 35vh 0 0 60vw;
+    padding-bottom: 15px;
+
+}
+
+
+
+.newButton{
+
+    margin: 2vh 0 0 70vw;
+
+    }
+}
+
+/*----------------- Meadia Query for Tablets-----------*/
+
+@media screen and (min-width: 1024px){
+    /*.menuList{
+        display: inline;
+    }
+
+}*/
+
+
+    .cartIcon, navBtn{
+        display: none;
+    }
+
+    .logoC{
+
+
+    width: 100px;
+    top:10vh;
+    left:5vw;
+
+}
+    .mainHeading{
+        position: absolute;
+        top: 75vh;
+        left: 2vw;
+        margin: 0;
+        font-size: 2em;
+
+    }
+
+    .slogan{
+        position: absolute;
+        top: 15vh;
+        right: 10vw;
+        margin: 0;
+
+    }
+
+    /*--------------------Navigation ----------*/
+    .menuList{
+        display: inline;
+
+    }
+    .navC{
+
+    border-bottom: none;
+
+    text-align: right;
+        padding: 10px 0;
+
+}
+/*av li a{
+    text-transform:capatile;
+    }
+    */
+
+
+    .nav a{
+        font-size: 1em;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+
+    .nav a:hover{
+        color: #f500ff;
+
+    }
+
+
+
+.menuList a{
+   /* removes the bullet point from the ul*/
+    padding: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+.Heading{
+    font-size: 2px;
+    color: white;
+}
+
+.Button{
+    border: 2px;
+    background-color:rgb(200, 177, 250,0.3);
+    padding: 3px;
+    margin: 2vh;
+
+}
+
+
+
+
+
+
+
