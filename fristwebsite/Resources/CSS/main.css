@@ -1,0 +1,72 @@
+/* Universal selector */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* includes padding and border in the element total width and height (W3school definition)*/
+
+body{
+
+/* tells the browser to use an alternative text decided by us*/
+    font-family: sans-serif,serif;
+    font-size: 18px;
+}
+        p {
+
+            color:purple;
+        }
+
+/*Grouping selector and common declaration to reduce repetition */
+
+h1,h2{
+    font-family: monospace;
+    color:red;
+    text-align: center
+
+
+
+
+
+
+}
+
+h1{
+    /* Contorle + e to select color */
+    color:red;
+    font-size:40px;
+   /* margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px*/
+
+    margin:10px;
+    margin:10px 5px;
+    /* Margin will be altered going clockwise*/
+    margin:10px 5px 15px 5px;
+
+
+
+
+}
+
+h2{
+
+    
+    font-size: :25px;
+    border:12px solid red;
+    padding: 10px 0px 10px 50px;
+    margin-bottom:10px
+}
+
+
+
+.ptag{
+    color: cornflowerblue;
+    border-color: yellow
+}
+
+#p2tag {
+    color:darkgreen;
+}
+
