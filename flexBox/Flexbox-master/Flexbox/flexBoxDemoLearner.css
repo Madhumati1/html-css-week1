@@ -1,0 +1,72 @@
+/* ------------------------------------------------------------------------------------
+
+                    FLEXBOX DEMO FOR PRACTICE
+
+
+------------------------------------------------------------------------------------ */
+
+html, body {
+    background-color: black;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#flexC {
+
+}
+
+ul li {
+
+}
+
+ul li:first-child { background-color: burlywood; }
+ul li:nth-child(2) { background-color:cadetblue; }
+ul li:nth-child(3) { background-color: darkkhaki; }
+ul li:nth-child(4) { background-color: crimson; }
+ul li:nth-child(5) { background-color: fuchsia; }
+ul li:last-child { background-color: chartreuse; }
+
+
+
+/* FIRST IN AM GOING TO INTRODUCE THE FLEX DISPLAY */
+
+
+#flexC {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    align-items: stretch;
+
+}
+
+
+/* MAKE ALL THE ITEMS EQUAL SIZE TO THE VIEW PORT */
+
+
+ul li {
+
+}
+
+
+
+#flexC {
+
+}
+
+ul li {
+    flex-grow: 1;
+    padding: 50px;
+    margin: 0;
+    text-align: center;
+    width: 100;
+    font-size: 2em;
+
+}
+
+
+
+
+
